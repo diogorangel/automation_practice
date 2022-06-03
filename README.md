@@ -15,7 +15,7 @@ Pré-requisitos de instalação:
 	
 	3. Maven - baixar e descompactar no C raiz.
 	
-	4. Plug-in do Maven no Eclipse - baixar e instalar pelo Eclipse Marketplace (sair da rede do banco).
+	4. Plug-in do Maven no Eclipse - baixar e instalar pelo Eclipse Marketplace.
 	
 	5. Google Chrome - Principal plataforma de teste web e no mobile utilizamos para inspeção de elementos webviews de aplicativos híbridos.
 	
