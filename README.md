@@ -8,10 +8,9 @@ Objetivo:
 
 Pré-requisitos de instalação:
 
-	1. Java JDK 11 LTS - esta é a versão que utilizamos atualmente, mas creio que qualquer sub-versão da 11 não teremos problemas.
-	Instalar, preferencialmente, na pasta do usuário local para ter acesso a edição da mesma, caso precise instalar certificados.
+	1. Java JDK 11.
 	
-	2. Eclipse Java EE - qualquer versão, fica a critério do analista de automação de testes.
+	2. Eclipse Java EE 
 	
 	3. Maven - baixar e descompactar no C raiz.
 	
