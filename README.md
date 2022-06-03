@@ -1,85 +1,56 @@
-# Portal_PJ_Automacao
-Projeto de AutomaÁ„o Portal_PJ_Automacao.
+# Teste Renner via DBC Company
+Projeto de Automa√ß√£o Portal_PJ_Automacao.
 
 Objetivo:
 	
-	Automatizar testes UI (User Interface) utilizando ferramentas como: Cucumber, jUnit, Appium, Selenium Webdriver, Java, Mobile Center, 
-	Maven, Redis, Mainframe e ALM, afim de verificar, validar e documentar a execuÁ„o dos cen·rios de testes das funcionalidades da aplicaÁ„o.
+	Automatizar testes UI (User Interface) utilizando ferramentas como: Cucumber, jUnit, Appium, Selenium Webdriver, Java,
+	Maven, validar e documentar a execu√ß√£o dos cen√°rios de testes das funcionalidades da aplica√ß√£o.
 
-PrÈ-requisitos de instalaÁ„o:
+Pr√©-requisitos de instala√ß√£o:
 
-	1. Java JDK 11 LTS - esta È a vers„o que utilizamos atualmente, mas creio que qualquer sub-vers„o da 11 n„o teremos problemas.
-	Instalar, preferencialmente, na pasta do usu·rio local para ter acesso a ediÁ„o da mesma, caso precise instalar certificados.
+	1. Java JDK 11 LTS - esta √© a vers√£o que utilizamos atualmente, mas creio que qualquer sub-vers√£o da 11 n√£o teremos problemas.
+	Instalar, preferencialmente, na pasta do usu√°rio local para ter acesso a edi√ß√£o da mesma, caso precise instalar certificados.
 	
-	2. Eclipse Java EE - qualquer vers„o, fica a critÈrio do analista de automaÁ„o de testes.
+	2. Eclipse Java EE - qualquer vers√£o, fica a crit√©rio do analista de automa√ß√£o de testes.
 	
 	3. Maven - baixar e descompactar no C raiz.
 	
 	4. Plug-in do Maven no Eclipse - baixar e instalar pelo Eclipse Marketplace (sair da rede do banco).
 	
-	5. Plug-in do Cucumber no Eclipse - baixar e instalar pelo Eclipse Marketplace (sair da rede do banco).
+	5. Google Chrome - Principal plataforma de teste web e no mobile utilizamos para inspe√ß√£o de elementos webviews de aplicativos h√≠bridos.
 	
-	6. Appium - utilizamos para inspeÁ„o de elementos nativos. Verificar a vers„o de acordo com a vers„o do Appium do Mobile Center.
+
+
 	
-	7. Google Chrome - Principal plataforma de teste web e no mobile utilizamos para inspeÁ„o de elementos webviews de aplicativos hÌbridos.
-	
-	8. Mozilla Firefox - Utilizados para testes MultiBrowser.
-	
-	9. Edge - Utilizados para testes MultiBrowser.
 
-	10. Internet Explore - Utilizados para testes MultiBrowser e rodar os testes no ALM.
+Pr√©-requisitos de configura√ß√£o:
 
-	Opcionais:
+	1. Criar vari√°vel de ambiente JAVA_HOME.
+
+	2. Criar vari√°vel de ambiente MAVEN_HOME.
+
+	3. Adicionar %JAVA_HOME%\bin na vari√°vel de ambiente PATH.
+
+	4. Adicionar %MAVEN_HOME%\bin na vari√°vel de ambiente PATH.
+
+	5. Ter o projeto baixado (.git).
 		
-		1. UFT com plug-in do LeanFT 15.02 - uma boa opÁ„o para inspeÁ„o de elementos.
-		
-		2. Node.js - caso for baixar o cÛdigo da aplicaÁ„o na m·quina, necess·rio para configurar o Ripple ou utilizar o LeanFT.
-				
-		3. PW3270 - Utilizamos o terminal mainframe e para rodar scripts de captura sms token.
-		
-		4. IBM PCOMM - Utilizamos o terminal mainframe e para rodar scripts de captura sms token.
 
-PrÈ-requisitos de configuraÁ„o:
-
-	1. Criar vari·vel de ambiente JAVA_HOME.
-
-	2. Criar vari·vel de ambiente MAVEN_HOME.
-
-	3. Adicionar %JAVA_HOME%\bin na vari·vel de ambiente PATH.
-
-	4. Adicionar %MAVEN_HOME%\bin na vari·vel de ambiente PATH.
-
-	Nexus:
-	- RepositÛrio Maven do banco.
-	
-		1. Ter acesso ao Nexus > RepositÛrio: devsecops-maven-central.
-
-		2. Ter o arquivo de settings.xml para conex„o com o Nexus.
-
-		3. Ter o projeto baixado (.git).
-		
-	Alternativa Nexus:
-	- Utilizar o prÛprio Maven para controle das dependÍncias.
-		
-		1. Desconectar da rede do banco e no Eclipse, ALT + F5 na raiz do projeto para baixar e configurar as dependÍncias do projeto.
 
 
 Configurar o projeto seguindo o passo-a-passo abaixo:
 
-	1. Criar o caminho de pastas: C:\Projetos\Bradesco\Portal_PJ_Automacao.
+	1. Criar o caminho de pastas: C:\Projeto Renner\automation_practice.
 	
-	2. Clonar o projeto do GitLab.
+	2. Clonar o projeto do meu GiTHub (https://github.com/diogorangel).
 	
 	3. Criar uma workspace vazia no Eclipse Java EE.
 	
 	4. Eclipse > Window > Preferences > Java > Installed JREs > Manter apenas o JDK 11 LTS.
 	
-	5. Se for utilizar o Nexus, Eclipse > Window > Preferences > Maven > User Settings > User Settings > Apontar para o settings.xml
-	para conex„o com o Maven.
-	
-	6. Eclipse > File > Import > Maven > Existing Maven Project > Apontar para o projeto e finalizar.	
+	5. Eclipse > File > Import > Maven > Existing Maven Project > Apontar para o projeto e finalizar.	
 		
-	7. Alt + F5 no projeto.
+	6. Alt + F5 no projeto.
 	
 	PRONTO! Projeto configurado!
 	
@@ -87,60 +58,24 @@ Configurar o projeto seguindo o passo-a-passo abaixo:
 Estrutura do projeto:
 
 	1. src/main/java > package utilitarios
-		Onde ficam as classes do core do framework, qualquer alteraÁ„o aqui pode quebrar a estrutura. PorÈm, aqui È onde ficam os mÈtodos
-		comuns para o desenvolvimento do cen·rio de teste, por exemplo, uma chamada de um script mainframe È feita no MainframeCore e a leitura do
-		properties gerado utilizamos a UtilsGeral. E assim por diante, ApiCore chamar mÈtodos comuns de API, UtilsMobile chamar mÈtodos comuns
-		mobile, UtilsWeb chamar mÈtodos comuns web.
-		Importante: nosso core j· tem a implementaÁ„o de grande parte dos mÈtodos comuns para automaÁ„o UI, eles j· est„o sido estendidos pelos 
-		UtilsMobile, UtilsGeral e UtilsWeb. Verificar a documentaÁ„o dos mÈtodos do core antes de qualquer implementaÁ„o nessas classes. 
+		core j√° tem a implementa√ß√£o de grande parte dos m√©todos comuns para automa√ß√£o UI, eles j√° est√£o sido estendidos pelo e UtilsWeb. 				Verificar a documenta√ß√£o dos m√©todos do core antes de qualquer implementa√ß√£o nessas classes. 
 		
 	2. src/main/resources
-		Onde ficam todos os recursos necess·rios para darem suporte ao core do framework, qualquer alteraÁ„o aqui pode quebrar a estrutura.
-		Importante: o config.properties que configura toda a execuÁ„o, define: qual aparelho, qual usu·rio do Mobile Center, qual navegador,
-		etc. Para testes mobile gerar o token de acesso no Mobile Center e alterar nos respectivos campos do config.properties.
+		Onde ficam todos os recursos necess√°rios para darem suporte ao core do framework, qualquer altera√ß√£o aqui pode quebrar a estrutura.
+		Importante: o config.properties que configura toda a execu√ß√£o, define: qual navegador, alterar nos respectivos campos do config.properties.
 		
 	3. src/test/java e src/test/resources
-		Nestas pastas o analista de automaÁ„o ir· atuar.
+		Nestas pastas o analista de automa√ß√£o ir√° ser realizada.
 		
-	4. src/test/java > package pagesmobile
-		Aqui onde se cria todas as pages mobile do projeto, cada tela da aplicaÁ„o corresponde a uma classe page.
+	4. src/test/java > package pagesweb
+		Aqui onde se cria todas as pages web do projeto, cada tela da aplica√ß√£o corresponde a uma classe page.
 		
-	5. src/test/java > package pagesweb
-		Aqui onde se cria todas as pages web do projeto, cada tela da aplicaÁ„o corresponde a uma classe page.
+	5. src/test/java > package runners
+		Onde ficam as classes para execu√ß√µes dos testes locais em Cucumber, cada funcionalidade da aplica√ß√£o ter√° uma classe runner.
 		
-	6. src/test/java > package runners
-		Onde ficam as classes para execuÁıes dos testes locais em Cucumber, cada funcionalidade da aplicaÁ„o ter· uma classe runner.
-		
-	7. src/test/java > package steps
-		Onde ficam os passos dos cen·rios, aqui È onde se implementa a lÛgica do passo. Cada funcionalidade da aplicaÁ„o ter· uma classe step,
+	6. src/test/java > package steps
+		Onde ficam os passos dos cen√°rios, aqui √© onde se implementa a l√≥gica do passo. Cada funcionalidade da aplica√ß√£o ter√° uma classe step,
 		respeitando sempre a plataforma.
 		
-	8. src/test/resources > pasta features
-		Onde ficam os cen·rios escritos em Gherkin. 
-
-
-
-Configurando o ALM para documentaÁ„o da execuÁ„o dos cen·rios:
-
-	PrÈ-condiÁıes:
-	
-		1. Ter acesso ao ALM e a um projeto.
-		
-		2. Ter o projeto de automaÁ„o baixado e configurado na m·quina, conforme instruÁıes acima.
-		
-	Passo-a-passo:
-	
-		1. Alterar no arquivo src/main/resources/conexaoALM/Portal_PJ_AutomacaoExecution.vbs onde tiver a referÍncia Portal_PJ_Automacao para a pasta do
-		projeto criado.
-		
-		2. Estar logado no projeto no ALM e adicionar em Testes > Recursos de testes um novo item Function Library. ApÛs isso, fazer o upload do
-		arquivo do projeto src/main/resources/conexaoALM/Portal_PJ_AutomacaoExecution.vbs atravÈs da aba Visualizador de Recursos no ALM.
-		
-		3. Em Testes > Plano de Testes, o item de execuÁ„o do script È o VAPI-XP-TEST. Crie os testes com este tipo. Neste item, adicione o 
-		cÛdigo do arquivo src/main/resources/conexaoALM/VAPI-XP-TEST - Script de Teste.txt. Ainda neste item, na aba Par‚metros, crie um novo
-		par‚metro chamado TAG_NAME e com o valor da tag do Cucumber relacionado a este cen·rio. Em Dados, realizar a cÛpia do valor padr„o para
-		valor real. ObservaÁ„o: deve ser 1 para 1, ou seja, a tag informada no ALM deve ser ˙nica no projeto..
-		
-		4. Em Testes > LaboratÛrio de Testes > Adicionar o cen·rio em uma suÌte de testes.
-		
-		5. Para execuÁ„o, utilize o bot„o Executar Conjunto de Testes, a partir dai selecionando um ou mais testes para serem executados.
+	7. src/test/resources > pasta features
+		Onde ficam os cen√°rios escritos em Gherkin. 
