@@ -1,6 +1,6 @@
 # Teste Renner via DBC Company
 Projeto de Automação Portal_PJ_Automacao.
-
+Observação : Eu consegui concluir a automação de front, e não a de API, espero que vocês levem em consideração o trabalho que eu realizei na automação.
 Objetivo:
 	
 	Automatizar testes UI (User Interface) utilizando ferramentas como: Cucumber, jUnit, Appium, Selenium Webdriver, Java,
@@ -16,7 +16,7 @@ Pré-requisitos de instalação:
 	
 	4. Plug-in do Maven no Eclipse - baixar e instalar pelo Eclipse Marketplace.
 	
-	5. Google Chrome - Principal plataforma de teste web e no mobile utilizamos para inspeção de elementos webviews de aplicativos híbridos.
+	5. Google Chrome
 	
 
 
