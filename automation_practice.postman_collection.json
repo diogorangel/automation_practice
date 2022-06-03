@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "537bafb7-d7b2-491d-ac17-fc308a23ccfa",
+		"name": "automation_practice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10369220"
+	},
+	"item": [
+		{
+			"name": "automation_practice_api",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "name",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "job",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "job",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://reqres.in/",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						""
+					]
+				},
+				"description": "Teste Renner"
+			},
+			"response": []
+		}
+	]
+}
