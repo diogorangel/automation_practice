@@ -1,5 +1,5 @@
 # Teste Renner via DBC Company
-Projeto de Automação Portal_PJ_Automacao.
+Projeto Automação Renner.
 Observação : Eu consegui concluir a automação de front, e não a de API, espero que vocês levem em consideração o trabalho que eu realizei na automação.
 Objetivo:
 	
